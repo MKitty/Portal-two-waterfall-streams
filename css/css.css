@@ -1,0 +1,6603 @@
+
+
+
+/* Buttons */
+.bs-example > .btn,
+.bs-example > .btn-group {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bs-example > .btn-toolbar + .btn-toolbar {
+    margin-top: 10px;
+}
+
+/* Forms */
+.bs-example-control-sizing select,
+.bs-example-control-sizing input[type="text"] + input[type="text"] {
+    margin-top: 10px;
+}
+
+.bs-example-form .input-group {
+    margin-bottom: 10px;
+}
+
+.bs-example > textarea.form-control {
+    resize: vertical;
+}
+
+/* List groups */
+.bs-example > .list-group {
+    max-width: 400px;
+}
+
+
+/* Pagination */
+.bs-example .pagination {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Pager */
+.bs-example > .pager {
+    margin-top: 0;
+}
+
+/* Example modals */
+.bs-example-modal {
+    background-color: #f5f5f5;
+}
+
+.bs-example-modal .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    z-index: 1;
+    display: block;
+}
+
+.bs-example-modal .modal-dialog {
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Example dropdowns */
+.bs-example > .dropdown > .dropdown-menu {
+    position: static;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Example tabbable tabs */
+.bs-example-tabs .nav-tabs {
+    margin-bottom: 15px;
+}
+
+/* Tooltips */
+.bs-example-tooltips {
+    text-align: center;
+}
+
+.bs-example-tooltips > .btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Popovers */
+.bs-example-popover {
+    padding-bottom: 24px;
+    background-color: #f9f9f9;
+}
+
+.bs-example-popover .popover {
+    position: relative;
+    display: block;
+    float: left;
+    width: 260px;
+    margin: 20px;
+}
+
+/* Scrollspy demo on fixed height div */
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+/*
+ * Code snippets
+ *
+ * Generated via Pygments and Jekyll, these are snippets of HTML, CSS, and JS.
+ */
+
+.highlight {
+    display: none; /* hidden by default, until >480px */
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px;
+}
+
+.highlight pre {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    white-space: nowrap;
+}
+
+.highlight pre code {
+    font-size: inherit;
+    color: #333; /* Effectively the base text color */
+}
+
+.highlight pre .lineno {
+    display: inline-block;
+    width: 22px;
+    padding-right: 5px;
+    margin-right: 10px;
+    text-align: right;
+    color: #bebec5;
+}
+
+/* Show code snippets when we have the space */
+@media (min-width: 481px) {
+    .highlight {
+        display: block;
+    }
+}
+
+/*
+ * Responsive tests
+ *
+ * Generate a set of tests to show the responsive utilities in action.
+ */
+
+/* Responsive (scrollable) doc tables */
+.table-responsive .highlight pre {
+    white-space: normal;
+}
+
+/* Utility classes table  */
+.bs-table th small,
+.responsive-utilities th small {
+    display: block;
+    font-weight: normal;
+    color: #999;
+}
+
+.responsive-utilities tbody th {
+    font-weight: normal;
+}
+
+.responsive-utilities td {
+    text-align: center;
+}
+
+.responsive-utilities td.is-visible {
+    color: #468847;
+    background-color: #dff0d8 !important;
+}
+
+.responsive-utilities td.is-hidden {
+    color: #ccc;
+    background-color: #f9f9f9 !important;
+}
+
+/* Responsive tests */
+.responsive-utilities-test {
+    margin-top: 5px;
+}
+
+.responsive-utilities-test .col-xs-6 {
+    margin-bottom: 10px;
+}
+
+.responsive-utilities-test span {
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.visible-on .col-xs-6 .hidden-xs,
+.visible-on .col-xs-6 .hidden-sm,
+.visible-on .col-xs-6 .hidden-md,
+.visible-on .col-xs-6 .hidden-lg,
+.hidden-on .col-xs-6 .hidden-xs,
+.hidden-on .col-xs-6 .hidden-sm,
+.hidden-on .col-xs-6 .hidden-md,
+.hidden-on .col-xs-6 .hidden-lg {
+    color: #999;
+    border: 1px solid #ddd;
+}
+
+.visible-on .col-xs-6 .visible-xs,
+.visible-on .col-xs-6 .visible-sm,
+.visible-on .col-xs-6 .visible-md,
+.visible-on .col-xs-6 .visible-lg,
+.hidden-on .col-xs-6 .visible-xs,
+.hidden-on .col-xs-6 .visible-sm,
+.hidden-on .col-xs-6 .visible-md,
+.hidden-on .col-xs-6 .visible-lg {
+    color: #468847;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+}
+
+/*
+ * Glyphicons
+ *
+ * Special styles for displaying the icons and their classes in the docs.
+ */
+
+.bs-glyphicons {
+    padding-left: 0;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.bs-glyphicons li {
+    float: left;
+    width: 25%;
+    height: 115px;
+    padding: 10px;
+    margin: 0 -1px -1px 0;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.bs-glyphicons .glyphicon {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.bs-glyphicons .glyphicon-class {
+    display: block;
+    text-align: center;
+    word-wrap: break-word; /* Help out IE10+ with class names */
+}
+
+.bs-glyphicons li:hover {
+    background-color: rgba(86, 61, 124, .1);
+}
+
+@media (min-width: 768px) {
+    .bs-glyphicons li {
+        width: 12.5%;
+    }
+}
+
+/*
+ * Customizer
+ *
+ * Since this is so form control heavy, we have quite a few styles to customize
+ * the display of inputs, headings, and more. Also included are all the download
+ * buttons and actions.
+ */
+
+.bs-customizer .toggle {
+    float: right;
+    margin-top: 85px; /* On account of ghetto navbar fix */
+}
+
+/* Headings and form contrls */
+.bs-customizer label {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+.bs-customizer h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 30px;
+}
+
+.bs-customizer h3 {
+    margin-bottom: 0;
+}
+
+.bs-customizer h4 {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.bs-customizer .bs-callout h4 {
+    margin-top: 0; /* lame, but due to specificity we have to duplicate */
+    margin-bottom: 5px;
+}
+
+.bs-customizer input[type="text"] {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    background-color: #fafafa;
+}
+
+.bs-customizer .help-block {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+/* For the variables, use regular weight */
+#less-section label {
+    font-weight: normal;
+}
+
+/* Downloads */
+.bs-customize-download .btn-outline {
+    padding: 20px;
+}
+
+/* Error handling */
+.bs-customizer-alert {
+    position: fixed;
+    top: 51px;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    padding: 15px 0;
+    color: #fff;
+    background-color: #d9534f;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25);
+    border-bottom: 1px solid #b94441;
+}
+
+.bs-customizer-alert .close {
+    margin-top: -4px;
+    font-size: 24px;
+}
+
+.bs-customizer-alert p {
+    margin-bottom: 0;
+}
+
+.bs-customizer-alert .glyphicon {
+    margin-right: 5px;
+}
+
+.bs-customizer-alert pre {
+    margin: 10px 0 0;
+    color: #fff;
+    background-color: #a83c3a;
+    border-color: #973634;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+/*
+ * Miscellaneous
+ *
+ * Odds and ends for optimum docs display.
+ */
+
+/* About page */
+.bs-about {
+    font-size: 16px;
+}
+
+/* Examples gallery: space out content better */
+.bs-examples h4 {
+    margin-bottom: 5px;
+}
+
+.bs-examples p {
+    margin-bottom: 20px;
+}
+
+/* Pseudo :focus state for showing how it looks in the docs */
+#focusedInput {
+    border-color: rgba(82, 168, 236, .8);
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    -moz-box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+    box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+}
+
+/* Better spacing on download options in getting started */
+.bs-docs-dl-options h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+;
+/*!
+ * Copyright 2013 Twitter, Inc.
+ *
+ * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+ * details, see http://creativecommons.org/licenses/by/3.0/.
+ */
+
+/*
+ * Bootstrap Documentation
+ * Special styles for presenting Bootstrap's documentation and code examples.
+ *
+ * Table of contents:
+ *
+ * Scaffolding
+ * Main navigation
+ * Footer
+ * Social buttons
+ * Homepage
+ * Page headers
+ * Old docs callout
+ * Ads
+ * Side navigation
+ * Docs sections
+ * Callouts
+ * Grid styles
+ * Examples
+ * Code snippets (highlight)
+ * Responsive tests
+ * Glyphicons
+ * Customizer
+ * Miscellaneous
+ */
+
+/*
+ * Scaffolding
+ *
+ * Update the basics of our documents to prep for docs content.
+ */
+
+/* Keep code small in tables on account of limited space */
+.table code {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* Outline button for use within the docs */
+.btn-outline {
+    color: #563d7c;
+    background-color: #fff;
+    border-color: #e5e5e5;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+    color: #fff;
+    background-color: #563d7c;
+    border-color: #563d7c;
+}
+
+/* Inverted outline button (white on dark) */
+.btn-outline-inverse {
+    color: #fff;
+    background-color: transparent;
+    border-color: #cdbfe3;
+}
+
+.btn-outline-inverse:hover,
+.btn-outline-inverse:focus,
+.btn-outline-inverse:active {
+    color: #563d7c;
+    text-shadow: none;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/*
+ * Main navigation
+ *
+ * Turn the `.navbar` at the top of the docs purple.
+ */
+
+.bs-docs-nav {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .15);
+    background-color: #563d7c;
+    border-color: #463265;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+.bs-docs-nav .navbar-collapse {
+    border-color: #463265;
+}
+
+.bs-docs-nav .navbar-brand {
+    color: #fff;
+}
+
+.bs-docs-nav .navbar-nav > li > a {
+    color: #cdbfe3;
+}
+
+.bs-docs-nav .navbar-nav > li > a:hover {
+    color: #fff;
+}
+
+.bs-docs-nav .navbar-nav > .active > a,
+.bs-docs-nav .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #463265;
+}
+
+.bs-docs-nav .navbar-toggle {
+    border-color: #563d7c;
+}
+
+.bs-docs-nav .navbar-toggle:hover {
+    background-color: #463265;
+    border-color: #463265;
+}
+
+/*
+ * Footer
+ *
+ * Separated section of content at the bottom of all pages, save the homepage.
+ */
+
+.bs-footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-top: 100px;
+    color: #777;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-links {
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+.footer-links li {
+    display: inline;
+    padding: 0 2px;
+}
+
+.footer-links li:first-child {
+    padding-left: 0;
+}
+
+@media (min-width: 768px) {
+    .bs-footer {
+        text-align: left;
+    }
+
+    .bs-footer p {
+        margin-bottom: 0;
+    }
+}
+
+/*
+ * Social buttons
+ *
+ * Twitter and GitHub social action buttons (for homepage and footer).
+ */
+
+.bs-social {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bs-social-buttons {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.bs-social-buttons li {
+    display: inline-block;
+    line-height: 1;
+    padding: 5px 8px;
+}
+
+.bs-social-buttons .twitter-follow-button {
+    width: 225px !important;
+}
+
+.bs-social-buttons .twitter-share-button {
+    width: 98px !important;
+}
+
+/* Style the GitHub buttons via CSS instead of inline attributes */
+.github-btn {
+    border: 0;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .bs-social {
+        text-align: left;
+    }
+
+    .bs-social-buttons li:first-child {
+        padding-left: 0;
+    }
+}
+
+/*
+ * Topography, yo!
+ *
+ * Apply the map background via base64 and relevant colors where we need 'em.
+ */
+
+.bs-docs-home,
+
+
+    /*
+     * Homepage
+     *
+     * Tweaks to the custom homepage and the masthead (main jumbotron).
+     */
+
+    /* Masthead (headings and download button) */
+.bs-masthead {
+    position: relative;
+    padding: 30px 15px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+}
+
+.bs-masthead h1 {
+    font-size: 50px;
+    line-height: 1;
+    color: #fff;
+}
+
+.bs-masthead .btn-outline-inverse {
+    margin: 10px;
+}
+
+/* Links to project-level content like the repo, Expo, etc */
+.bs-masthead-links {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0 15px;
+    list-style: none;
+    text-align: center;
+}
+
+.bs-masthead-links li {
+    display: inline;
+}
+
+.bs-masthead-links li + li {
+    margin-left: 20px;
+}
+
+.bs-masthead-links a {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .bs-masthead {
+        text-align: left;
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+
+    .bs-masthead h1 {
+        font-size: 100px;
+    }
+
+    .bs-masthead .lead {
+        margin-right: 25%;
+        font-size: 30px;
+    }
+
+    .bs-masthead .btn-outline-inverse {
+        width: auto;
+        margin: 20px 5px 20px 0;
+        padding: 18px 24px;
+        font-size: 21px;
+    }
+
+    .bs-masthead-links {
+        padding: 0;
+        text-align: left;
+    }
+}
+
+/*
+ * Page headers
+ *
+ * Jumbotron-esque headers at the top of every page that's not the homepage.
+ */
+
+/* Page headers */
+.bs-header {
+    padding: 30px 15px 40px; /* side padding builds on .container 15px, so 30px */
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+}
+
+.bs-header h1 {
+    color: #fff;
+}
+
+.bs-header p {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.bs-header .container {
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .bs-header {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    .bs-header h1 {
+        font-size: 60px;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .bs-header h1,
+    .bs-header p {
+        margin-right: 380px;
+    }
+}
+
+/*
+ * Carbon ads
+ *
+ * Single display ad that shows on all pages (except homepage) in page headers.
+ * The hella `!important` is required for any pre-set property.
+ */
+
+.carbonad {
+    width: auto !important;
+    margin: 50px -30px -40px !important;
+    padding: 20px !important;
+    overflow: hidden; /* clearfix */
+    height: auto !important;
+    font-size: 13px !important;
+    line-height: 16px !important;
+    text-align: left;
+    background: #463265 !important;
+    border: 0 !important;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .075);
+}
+
+.carbonad-img {
+    margin: 0 !important;
+}
+
+.carbonad-text,
+.carbonad-tag {
+    float: none !important;
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    margin-left: 145px !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.carbonad-text {
+    padding-top: 0 !important;
+}
+
+.carbonad-tag {
+    color: #cdbfe3 !important;
+    text-align: left !important;
+}
+
+.carbonad-text a,
+.carbonad-tag a {
+    color: #fff !important;
+}
+
+.carbonad #azcarbon > img {
+    display: none; /* hide what I assume are tracking images */
+}
+
+@media (min-width: 768px) {
+    .carbonad {
+        margin: 0 !important;
+        border-radius: 4px;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .075), 0 1px 0 rgba(255, 255, 255, .1);
+    }
+}
+
+@media (min-width: 992px) {
+    .carbonad {
+        position: absolute;
+        top: 20px;
+        right: 15px; /* 15px instead of 0 since box-sizing */
+        padding: 15px !important;
+        width: 330px !important;
+    }
+}
+
+/* Homepage variations */
+.bs-docs-home .carbonad {
+    margin: 0 -15px 40px !important;
+}
+
+@media (min-width: 480px) {
+    .bs-docs-home .carbonad {
+        width: 330px !important;
+        margin: 0 auto 40px !important;
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bs-docs-home .carbonad {
+        float: left;
+        width: 330px !important;
+        margin: 0 0 30px !important;
+    }
+
+    .bs-docs-home .bs-social,
+    .bs-docs-home .bs-masthead-links {
+        margin-left: 350px;
+    }
+
+    .bs-docs-home .bs-social {
+        margin-bottom: 10px;
+    }
+
+    .bs-docs-home .bs-masthead-links {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .bs-docs-home .carbonad {
+        position: static;
+    }
+}
+
+@media (min-width: 1170px) {
+    .bs-docs-home .carbonad {
+        margin-top: -25px !important;
+    }
+}
+
+/*
+ * Callout for 2.3.2 docs
+ *
+ * Only appears below page headers (not on the homepage). The homepage gets its
+ * own link with the masthead links.
+ */
+
+.bs-old-docs {
+    padding: 15px 20px;
+    color: #777;
+    background-color: #fafafa;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.bs-old-docs strong {
+    color: #555;
+}
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar.affix {
+    position: static;
+}
+
+/* First level of nav */
+.bs-sidenav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 0 #fff;
+    background-color: #f7f5fa;
+    border-radius: 5px;
+}
+
+/* All levels of nav */
+.bs-sidebar .nav > li > a {
+    display: block;
+    color: #716b7a;
+    padding: 5px 20px;
+}
+
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #e5e3e9;
+    border-right: 1px solid #dbd8e0;
+}
+
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+    font-weight: bold;
+    color: #563d7c;
+    background-color: transparent;
+    border-right: 1px solid #563d7c;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    margin-bottom: 8px;
+}
+
+.bs-sidebar .nav .nav > li > a {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-sidebar .nav > .active > ul {
+        display: block;
+    }
+
+    /* Widen the fixed sidebar */
+    .bs-sidebar.affix,
+    .bs-sidebar.affix-bottom {
+        width: 213px;
+    }
+
+    .bs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 80px;
+    }
+
+    .bs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+
+    .bs-sidebar.affix-bottom .bs-sidenav,
+    .bs-sidebar.affix .bs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-sidebar.affix-bottom,
+    .bs-sidebar.affix {
+        width: 263px;
+    }
+}
+
+/*
+ * Docs sections
+ *
+ * Content blocks for each component or feature.
+ */
+
+/* Space things out */
+.bs-docs-section + .bs-docs-section {
+    padding-top: 40px;
+}
+
+/* Janky fix for preventing navbar from overlapping */
+h1[id] {
+    padding-top: 80px;
+    margin-top: -45px;
+}
+
+/*
+ * Callouts
+ *
+ * Not quite alerts, but custom and helpful notes for folks reading the docs.
+ * Requires a base and modifier class.
+ */
+
+/* Common styles for all types */
+.bs-callout {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 3px solid #eee;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+/* Variations */
+.bs-callout-danger {
+    background-color: #fdf7f7;
+    border-color: #eed3d7;
+}
+
+.bs-callout-danger h4 {
+    color: #b94a48;
+}
+
+.bs-callout-warning {
+    background-color: #faf8f0;
+    border-color: #faebcc;
+}
+
+.bs-callout-warning h4 {
+    color: #8a6d3b;
+}
+
+.bs-callout-info {
+    background-color: #f4f8fa;
+    border-color: #bce8f1;
+}
+
+.bs-callout-info h4 {
+    color: #34789a;
+}
+
+/*
+ * Team members
+ *
+ * Avatars, names, and usernames for core team.
+ */
+
+.bs-team .team-member {
+    color: #555;
+    line-height: 32px;
+}
+
+.bs-team .team-member:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.bs-team .github-btn {
+    float: right;
+    margin-top: 6px;
+    width: 120px;
+    height: 20px;
+}
+
+.bs-team img {
+    float: left;
+    width: 32px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+/*
+ * Grid examples
+ *
+ * Highlight the grid columns within the docs so folks can see their padding,
+ * alignment, sizing, etc.
+ */
+
+.show-grid {
+    margin-bottom: 15px;
+}
+
+.show-grid [class^="col-"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid rgba(86, 61, 124, .2);
+}
+
+/*
+ * Examples
+ *
+ * Isolated sections of example content for each component or feature. Usually
+ * followed by a code snippet.
+ */
+
+.bs-example {
+    position: relative;
+    padding: 45px 15px 15px;
+    margin: 0 -15px 15px;
+    background-color: #fafafa;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, .05);
+    border-color: #e5e5e5 #eee #eee;
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+/* Echo out a label for the example */
+
+
+/* Tweak display of the code snippets when following an example */
+.bs-example + .highlight {
+    margin: -15px -15px 15px;
+    border-radius: 0;
+    border-width: 0 0 1px;
+}
+
+/* Make the examples and snippets not full-width */
+@media (min-width: 768px) {
+    .bs-example {
+        margin-left: 0;
+        margin-right: 0;
+        background-color: #fff;
+        border-width: 1px;
+        border-color: #ddd;
+        border-radius: 4px 4px 0 0;
+        box-shadow: none;
+    }
+
+    .bs-example + .highlight {
+        margin-top: -16px;
+        margin-left: 0;
+        margin-right: 0;
+        border-width: 1px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}
+
+/* Undo width of container */
+.bs-example .container {
+    width: auto;
+}
+
+/* Tweak content of examples for optimum awesome */
+.bs-example > p:last-child,
+.bs-example > ul:last-child,
+.bs-example > ol:last-child,
+.bs-example > blockquote:last-child,
+.bs-example > .form-control:last-child,
+.bs-example > .table:last-child,
+.bs-example > .navbar:last-child,
+.bs-example > .jumbotron:last-child,
+.bs-example > .alert:last-child,
+.bs-example > .panel:last-child,
+.bs-example > .list-group:last-child,
+.bs-example > .well:last-child,
+.bs-example > .progress:last-child,
+.bs-example > .table-responsive:last-child > .table {
+    margin-bottom: 0;
+}
+
+.bs-example > p > .close {
+    float: none;
+}
+
+/* Typography */
+.bs-example-type .table .info {
+    color: #999;
+    vertical-align: middle;
+}
+
+.bs-example-type .table td {
+    padding: 15px 0;
+    border-color: #eee;
+}
+
+.bs-example-type .table tr:first-child td {
+    border-top: 0;
+}
+
+.bs-example-type h1,
+.bs-example-type h2,
+.bs-example-type h3,
+.bs-example-type h4,
+.bs-example-type h5,
+.bs-example-type h6 {
+    margin: 0;
+}
+
+/* Images */
+.bs-example > .img-circle,
+.bs-example > .img-rounded,
+.bs-example > .img-thumbnail {
+    margin: 5px;
+}
+
+/* Tables */
+.bs-example > .table-responsive > .table {
+    background-color: #fff;
+}
+
+/* Buttons */
+.bs-example > .btn,
+.bs-example > .btn-group {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bs-example > .btn-toolbar + .btn-toolbar {
+    margin-top: 10px;
+}
+
+/* Forms */
+.bs-example-control-sizing select,
+.bs-example-control-sizing input[type="text"] + input[type="text"] {
+    margin-top: 10px;
+}
+
+.bs-example-form .input-group {
+    margin-bottom: 10px;
+}
+
+.bs-example > textarea.form-control {
+    resize: vertical;
+}
+
+/* List groups */
+.bs-example > .list-group {
+    max-width: 400px;
+}
+
+/* Navbars */
+.bs-example .navbar:last-child {
+    margin-bottom: 0;
+}
+
+.bs-navbar-top-example,
+.bs-navbar-bottom-example {
+    z-index: 1;
+    padding: 0;
+    overflow: hidden; /* cut the drop shadows off */
+}
+
+.bs-navbar-top-example .navbar-header,
+.bs-navbar-bottom-example .navbar-header {
+    margin-left: 0;
+}
+
+.bs-navbar-top-example .navbar-fixed-top,
+.bs-navbar-bottom-example .navbar-fixed-bottom {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.bs-navbar-top-example {
+    padding-bottom: 45px;
+}
+
+.bs-navbar-top-example:after {
+    top: auto;
+    bottom: 15px;
+}
+
+.bs-navbar-top-example .navbar-fixed-top {
+    top: -1px;
+}
+
+.bs-navbar-bottom-example {
+    padding-top: 45px;
+}
+
+.bs-navbar-bottom-example .navbar-fixed-bottom {
+    bottom: -1px;
+}
+
+.bs-navbar-bottom-example .navbar {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .bs-navbar-top-example .navbar-fixed-top,
+    .bs-navbar-bottom-example .navbar-fixed-bottom {
+        position: absolute;
+    }
+
+    .bs-navbar-top-example {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .bs-navbar-bottom-example {
+        border-radius: 4px 4px 0 0;
+    }
+}
+
+/* Pagination */
+.bs-example .pagination {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Pager */
+.bs-example > .pager {
+    margin-top: 0;
+}
+
+/* Example modals */
+.bs-example-modal {
+    background-color: #f5f5f5;
+}
+
+.bs-example-modal .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    z-index: 1;
+    display: block;
+}
+
+.bs-example-modal .modal-dialog {
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Example dropdowns */
+.bs-example > .dropdown > .dropdown-menu {
+    position: static;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Example tabbable tabs */
+.bs-example-tabs .nav-tabs {
+    margin-bottom: 15px;
+}
+
+/* Tooltips */
+.bs-example-tooltips {
+    text-align: center;
+}
+
+.bs-example-tooltips > .btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Popovers */
+.bs-example-popover {
+    padding-bottom: 24px;
+    background-color: #f9f9f9;
+}
+
+.bs-example-popover .popover {
+    position: relative;
+    display: block;
+    float: left;
+    width: 260px;
+    margin: 20px;
+}
+
+/* Scrollspy demo on fixed height div */
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+/*
+ * Code snippets
+ *
+ * Generated via Pygments and Jekyll, these are snippets of HTML, CSS, and JS.
+ */
+
+.highlight {
+    display: none; /* hidden by default, until >480px */
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px;
+}
+
+.highlight pre {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    white-space: nowrap;
+}
+
+.highlight pre code {
+    font-size: inherit;
+    color: #333; /* Effectively the base text color */
+}
+
+.highlight pre .lineno {
+    display: inline-block;
+    width: 22px;
+    padding-right: 5px;
+    margin-right: 10px;
+    text-align: right;
+    color: #bebec5;
+}
+
+/* Show code snippets when we have the space */
+@media (min-width: 481px) {
+    .highlight {
+        display: block;
+    }
+}
+
+/*
+ * Responsive tests
+ *
+ * Generate a set of tests to show the responsive utilities in action.
+ */
+
+/* Responsive (scrollable) doc tables */
+.table-responsive .highlight pre {
+    white-space: normal;
+}
+
+/* Utility classes table  */
+.bs-table th small,
+.responsive-utilities th small {
+    display: block;
+    font-weight: normal;
+    color: #999;
+}
+
+.responsive-utilities tbody th {
+    font-weight: normal;
+}
+
+.responsive-utilities td {
+    text-align: center;
+}
+
+.responsive-utilities td.is-visible {
+    color: #468847;
+    background-color: #dff0d8 !important;
+}
+
+.responsive-utilities td.is-hidden {
+    color: #ccc;
+    background-color: #f9f9f9 !important;
+}
+
+/* Responsive tests */
+.responsive-utilities-test {
+    margin-top: 5px;
+}
+
+.responsive-utilities-test .col-xs-6 {
+    margin-bottom: 10px;
+}
+
+.responsive-utilities-test span {
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.visible-on .col-xs-6 .hidden-xs,
+.visible-on .col-xs-6 .hidden-sm,
+.visible-on .col-xs-6 .hidden-md,
+.visible-on .col-xs-6 .hidden-lg,
+.hidden-on .col-xs-6 .hidden-xs,
+.hidden-on .col-xs-6 .hidden-sm,
+.hidden-on .col-xs-6 .hidden-md,
+.hidden-on .col-xs-6 .hidden-lg {
+    color: #999;
+    border: 1px solid #ddd;
+}
+
+.visible-on .col-xs-6 .visible-xs,
+.visible-on .col-xs-6 .visible-sm,
+.visible-on .col-xs-6 .visible-md,
+.visible-on .col-xs-6 .visible-lg,
+.hidden-on .col-xs-6 .visible-xs,
+.hidden-on .col-xs-6 .visible-sm,
+.hidden-on .col-xs-6 .visible-md,
+.hidden-on .col-xs-6 .visible-lg {
+    color: #468847;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+}
+
+/*
+ * Glyphicons
+ *
+ * Special styles for displaying the icons and their classes in the docs.
+ */
+
+.bs-glyphicons {
+    padding-left: 0;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.bs-glyphicons li {
+    float: left;
+    width: 25%;
+    height: 115px;
+    padding: 10px;
+    margin: 0 -1px -1px 0;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.bs-glyphicons .glyphicon {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.bs-glyphicons .glyphicon-class {
+    display: block;
+    text-align: center;
+    word-wrap: break-word; /* Help out IE10+ with class names */
+}
+
+.bs-glyphicons li:hover {
+    background-color: rgba(86, 61, 124, .1);
+}
+
+@media (min-width: 768px) {
+    .bs-glyphicons li {
+        width: 12.5%;
+    }
+}
+
+/*
+ * Customizer
+ *
+ * Since this is so form control heavy, we have quite a few styles to customize
+ * the display of inputs, headings, and more. Also included are all the download
+ * buttons and actions.
+ */
+
+.bs-customizer .toggle {
+    float: right;
+    margin-top: 85px; /* On account of ghetto navbar fix */
+}
+
+/* Headings and form contrls */
+.bs-customizer label {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+.bs-customizer h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 30px;
+}
+
+.bs-customizer h3 {
+    margin-bottom: 0;
+}
+
+.bs-customizer h4 {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.bs-customizer .bs-callout h4 {
+    margin-top: 0; /* lame, but due to specificity we have to duplicate */
+    margin-bottom: 5px;
+}
+
+.bs-customizer input[type="text"] {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    background-color: #fafafa;
+}
+
+.bs-customizer .help-block {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+/* For the variables, use regular weight */
+#less-section label {
+    font-weight: normal;
+}
+
+/* Downloads */
+.bs-customize-download .btn-outline {
+    padding: 20px;
+}
+
+/* Error handling */
+.bs-customizer-alert {
+    position: fixed;
+    top: 51px;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    padding: 15px 0;
+    color: #fff;
+    background-color: #d9534f;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25);
+    border-bottom: 1px solid #b94441;
+}
+
+.bs-customizer-alert .close {
+    margin-top: -4px;
+    font-size: 24px;
+}
+
+.bs-customizer-alert p {
+    margin-bottom: 0;
+}
+
+.bs-customizer-alert .glyphicon {
+    margin-right: 5px;
+}
+
+.bs-customizer-alert pre {
+    margin: 10px 0 0;
+    color: #fff;
+    background-color: #a83c3a;
+    border-color: #973634;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+/*
+ * Miscellaneous
+ *
+ * Odds and ends for optimum docs display.
+ */
+
+/* About page */
+.bs-about {
+    font-size: 16px;
+}
+
+/* Examples gallery: space out content better */
+.bs-examples h4 {
+    margin-bottom: 5px;
+}
+
+.bs-examples p {
+    margin-bottom: 20px;
+}
+
+/* Pseudo :focus state for showing how it looks in the docs */
+#focusedInput {
+    border-color: rgba(82, 168, 236, .8);
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    -moz-box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+    box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+}
+
+/* Better spacing on download options in getting started */
+.bs-docs-dl-options h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+;
+.ih-item {
+    position: relative;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item,
+.ih-item * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ih-item a {
+    color: #333;
+}
+
+.ih-item a:hover {
+    text-decoration: none;
+}
+
+/*.ih-item img {
+    width: 100%;
+    height: 100%;
+}*/
+
+.ih-item.circle {
+    position: relative;
+  /*  width: 220px;
+    height: 220px;
+    border-radius: 50%;*/
+}
+
+.ih-item.circle .img {
+    position: relative;
+    /*width: 220px;
+    height: 220px;
+    border-radius: 50%;*/
+}
+
+.ih-item.circle .img:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+  /*  border-radius: 50%;
+    box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);*/
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+/*
+.ih-item.circle .img img {
+    border-radius: 50%;
+}
+*/
+.ih-item.circle .info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /*border-radius: 50%;*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ih-item.square {
+    position: relative;
+/*    width: 316px;
+    height: 216px;*/
+    border: 8px solid #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.square .info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ih-item.circle.effect1 .spinner {
+    width: 230px;
+    height: 230px;
+    border: 10px solid #ecab18;
+    border-right-color: #1ad280;
+    border-bottom-color: #1ad280;
+    border-radius: 50%;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.ih-item.circle.effect1 .img {
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
+.ih-item.circle.effect1 .img:before {
+    display: none;
+}
+
+.ih-item.circle.effect1.colored .info {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+}
+
+.ih-item.circle.effect1 .info {
+    top: 10px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.ih-item.circle.effect1 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect1 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect1 a:hover .spinner {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.ih-item.circle.effect1 a:hover .info {
+    opacity: 1;
+}
+
+.ih-item.circle.effect2 .img {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect2.colored .info {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+}
+
+.ih-item.circle.effect2 .info {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect2 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect2 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect2.left_to_right .info {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.circle.effect2.left_to_right a:hover .img {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.ih-item.circle.effect2.left_to_right a:hover .info {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect2.right_to_left .info {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.circle.effect2.right_to_left a:hover .img {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ih-item.circle.effect2.right_to_left a:hover .info {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect2.top_to_bottom .info {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.circle.effect2.top_to_bottom a:hover .img {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.ih-item.circle.effect2.top_to_bottom a:hover .info {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect2.bottom_to_top .info {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.circle.effect2.bottom_to_top a:hover .img {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ih-item.circle.effect2.bottom_to_top a:hover .info {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect3 .img {
+    z-index: 11;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect3.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect3 .info {
+    background: #333333;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect3 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect3 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect3.left_to_right .img {
+    -webkit-transform: scale(1) translateX(0);
+    -moz-transform: scale(1) translateX(0);
+    -ms-transform: scale(1) translateX(0);
+    -o-transform: scale(1) translateX(0);
+    transform: scale(1) translateX(0);
+}
+
+.ih-item.circle.effect3.left_to_right .info {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.circle.effect3.left_to_right a:hover .img {
+    -webkit-transform: scale(0.5) translateX(100%);
+    -moz-transform: scale(0.5) translateX(100%);
+    -ms-transform: scale(0.5) translateX(100%);
+    -o-transform: scale(0.5) translateX(100%);
+    transform: scale(0.5) translateX(100%);
+}
+
+.ih-item.circle.effect3.left_to_right a:hover .info {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect3.right_to_left .img {
+    -webkit-transform: scale(1) translateX(0);
+    -moz-transform: scale(1) translateX(0);
+    -ms-transform: scale(1) translateX(0);
+    -o-transform: scale(1) translateX(0);
+    transform: scale(1) translateX(0);
+}
+
+.ih-item.circle.effect3.right_to_left .info {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.circle.effect3.right_to_left a:hover .img {
+    -webkit-transform: scale(0.5) translateX(-100%);
+    -moz-transform: scale(0.5) translateX(-100%);
+    -ms-transform: scale(0.5) translateX(-100%);
+    -o-transform: scale(0.5) translateX(-100%);
+    transform: scale(0.5) translateX(-100%);
+}
+
+.ih-item.circle.effect3.right_to_left a:hover .info {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect3.top_to_bottom .img {
+    -webkit-transform: scale(1) translateY(0);
+    -moz-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    -o-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+
+.ih-item.circle.effect3.top_to_bottom .info {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.circle.effect3.top_to_bottom a:hover .img {
+    -webkit-transform: scale(0.5) translateY(100%);
+    -moz-transform: scale(0.5) translateY(100%);
+    -ms-transform: scale(0.5) translateY(100%);
+    -o-transform: scale(0.5) translateY(100%);
+    transform: scale(0.5) translateY(100%);
+}
+
+.ih-item.circle.effect3.top_to_bottom a:hover .info {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect3.bottom_to_top .img {
+    -webkit-transform: scale(1) translateY(0);
+    -moz-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    -o-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+
+.ih-item.circle.effect3.bottom_to_top .info {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.circle.effect3.bottom_to_top a:hover .img {
+    -webkit-transform: scale(0.5) translateY(-100%);
+    -moz-transform: scale(0.5) translateY(-100%);
+    -ms-transform: scale(0.5) translateY(-100%);
+    -o-transform: scale(0.5) translateY(-100%);
+    transform: scale(0.5) translateY(-100%);
+}
+
+.ih-item.circle.effect3.bottom_to_top a:hover .info {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect4 .img {
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.ih-item.circle.effect4.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect4 .info {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.ih-item.circle.effect4 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect4 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect4 a:hover .img {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ih-item.circle.effect4 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.circle.effect4.left_to_right .img {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect4.left_to_right .info {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.circle.effect4.left_to_right a:hover .img {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.circle.effect4.left_to_right a:hover .info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect4.right_to_left .img {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect4.right_to_left .info {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.circle.effect4.right_to_left a:hover .img {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.circle.effect4.right_to_left a:hover .info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect4.top_to_bottom .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect4.top_to_bottom .info {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.circle.effect4.top_to_bottom a:hover .img {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.circle.effect4.top_to_bottom a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect4.bottom_to_top .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect4.bottom_to_top .info {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.circle.effect4.bottom_to_top a:hover .img {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.circle.effect4.bottom_to_top a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect5 {
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    perspective: 900px;
+}
+
+.ih-item.circle.effect5.colored .info .info-back {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+}
+
+.ih-item.circle.effect5 .info {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.ih-item.circle.effect5 .info .info-back {
+    visibility: hidden;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    -moz-transform: rotate3d(0, 1, 0, 180deg);
+    -ms-transform: rotate3d(0, 1, 0, 180deg);
+    -o-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ih-item.circle.effect5 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect5 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect5 a:hover .info {
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    -moz-transform: rotate3d(0, 1, 0, -180deg);
+    -ms-transform: rotate3d(0, 1, 0, -180deg);
+    -o-transform: rotate3d(0, 1, 0, -180deg);
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+
+.ih-item.circle.effect5 a:hover .info .info-back {
+    visibility: visible;
+}
+
+.ih-item.circle.effect6 .img {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect6.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect6 .info {
+    background: #333333;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+
+
+.ih-item.circle.effect6.scale_up .info {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.circle.effect6.scale_up a:hover .img {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.ih-item.circle.effect6.scale_up a:hover .info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.circle.effect6.scale_down .info {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.ih-item.circle.effect6.scale_down a:hover .img {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.circle.effect6.scale_down a:hover .info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.circle.effect6.scale_down_up .info {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.35s ease-in-out 0.2s;
+    -moz-transition: all 0.35s ease-in-out 0.2s;
+    transition: all 0.35s ease-in-out 0.2s;
+}
+
+.ih-item.circle.effect6.scale_down_up a:hover .img {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.circle.effect6.scale_down_up a:hover .info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.circle.effect7 .img {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-out;
+    -moz-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+
+.ih-item.circle.effect7.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect7 .info {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition: all 0.35s ease 0.2s;
+    -moz-transition: all 0.35s ease 0.2s;
+    transition: all 0.35s ease 0.2s;
+}
+
+.ih-item.circle.effect7 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect7 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect7 a:hover .img {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.circle.effect7 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.circle.effect7.left_to_right .info {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.circle.effect7.left_to_right a:hover .info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect7.right_to_left .info {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.circle.effect7.right_to_left a:hover .info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect7.top_to_bottom .info {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.circle.effect7.top_to_bottom a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect7.bottom_to_top .info {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.circle.effect7.bottom_to_top a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect8.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect8 .img-container {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.ih-item.circle.effect8 .img-container .img {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out 0.3s;
+    -moz-transition: all 0.3s ease-in-out 0.3s;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+
+.ih-item.circle.effect8 .info-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s ease-in-out 0.3s;
+    -moz-transition: all 0.3s ease-in-out 0.3s;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+
+.ih-item.circle.effect8 .info {
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.35s ease-in-out 0.6s;
+    -moz-transition: all 0.35s ease-in-out 0.6s;
+    transition: all 0.35s ease-in-out 0.6s;
+}
+
+.ih-item.circle.effect8 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 45px 0 0 0;
+    height: 140px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect8 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect8 a:hover .img-container {
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.circle.effect8 a:hover .img-container .img {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ih-item.circle.effect8 a:hover .info-container {
+    opacity: 1;
+}
+
+.ih-item.circle.effect8 a:hover .info-container .info {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.circle.effect8.left_to_right .img-container .img {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect8.left_to_right .info-container {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.circle.effect8.left_to_right a:hover .img-container .img {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.circle.effect8.left_to_right a:hover .info-container {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect8.right_to_left .img-container .img {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect8.right_to_left .info-container {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.circle.effect8.right_to_left a:hover .img-container .img {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.circle.effect8.right_to_left a:hover .info-container {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect8.top_to_bottom .img-container .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect8.top_to_bottom .info-container {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.circle.effect8.top_to_bottom a:hover .img-container .img {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.circle.effect8.top_to_bottom a:hover .info-container {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect8.bottom_to_top .img-container .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect8.bottom_to_top .info-container {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.circle.effect8.bottom_to_top a:hover .img-container .img {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.circle.effect8.bottom_to_top a:hover .info-container {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect9 .img {
+    opacity: 1;
+    -webkit-transition: all 0.35s ease-out;
+    -moz-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+
+.ih-item.circle.effect9.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect9 .info {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.35s ease 0.2s;
+    -moz-transition: all 0.35s ease 0.2s;
+    transition: all 0.35s ease 0.2s;
+}
+
+.ih-item.circle.effect9 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect9 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect9 a:hover .img {
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.circle.effect9 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.circle.effect9.left_to_right .img {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+}
+
+.ih-item.circle.effect9.left_to_right a:hover .img {
+    -webkit-transform: translateX(100%) rotate(180deg);
+    -moz-transform: translateX(100%) rotate(180deg);
+    -ms-transform: translateX(100%) rotate(180deg);
+    -o-transform: translateX(100%) rotate(180deg);
+    transform: translateX(100%) rotate(180deg);
+}
+
+.ih-item.circle.effect9.right_to_left .img {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+}
+
+.ih-item.circle.effect9.right_to_left a:hover .img {
+    -webkit-transform: translateX(-100%) rotate(-180deg);
+    -moz-transform: translateX(-100%) rotate(-180deg);
+    -ms-transform: translateX(-100%) rotate(-180deg);
+    -o-transform: translateX(-100%) rotate(-180deg);
+    transform: translateX(-100%) rotate(-180deg);
+}
+
+.ih-item.circle.effect9.top_to_bottom .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect9.top_to_bottom a:hover .img {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.circle.effect9.bottom_to_top .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect9.bottom_to_top a:hover .img {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.circle.effect10 .img {
+    z-index: 11;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect10.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect10 .info {
+    background: #333333;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect10 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect10 .info p {
+    color: #bbb;
+    font-style: italic;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect10 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.circle.effect10.top_to_bottom .info h3 {
+    margin: 0 30px;
+    padding: 25px 0 0 0;
+    height: 78px;
+}
+
+.ih-item.circle.effect10.top_to_bottom .info p {
+    margin: 0 30px;
+    padding: 5px;
+}
+
+.ih-item.circle.effect10.top_to_bottom a:hover .img {
+    -webkit-transform: translateY(50px) scale(0.5);
+    -moz-transform: translateY(50px) scale(0.5);
+    -ms-transform: translateY(50px) scale(0.5);
+    -o-transform: translateY(50px) scale(0.5);
+    transform: translateY(50px) scale(0.5);
+}
+
+.ih-item.circle.effect10.bottom_to_top .info h3 {
+    margin: 95px 30px 0;
+    padding: 25px 0 0 0;
+    height: 78px;
+}
+
+.ih-item.circle.effect10.bottom_to_top .info p {
+    margin: 0 30px;
+    padding: 5px;
+}
+
+.ih-item.circle.effect10.bottom_to_top a:hover .img {
+    -webkit-transform: translateY(-50px) scale(0.5);
+    -moz-transform: translateY(-50px) scale(0.5);
+    -ms-transform: translateY(-50px) scale(0.5);
+    -o-transform: translateY(-50px) scale(0.5);
+    transform: translateY(-50px) scale(0.5);
+}
+
+.ih-item.circle.effect11 {
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    perspective: 900px;
+}
+
+.ih-item.circle.effect11 .img {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect11.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect11 .info {
+  /*  background: #333333;*/
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.35s ease 0.35s;
+    -moz-transition: all 0.35s ease 0.35s;
+    transition: all 0.35s ease 0.35s;
+}
+
+.ih-item.circle.effect11 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/*.ih-item.circle.effect11 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+*/
+.ih-item.circle.effect11 a:hover .img {
+    opacity: 0;
+}
+
+.ih-item.circle.effect11 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.circle.effect11.left_to_right .img {
+    -webkit-transform: translateZ(0) rotateY(0);
+    -moz-transform: translateZ(0) rotateY(0);
+    -ms-transform: translateZ(0) rotateY(0);
+    -o-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0);
+}
+
+.ih-item.circle.effect11.left_to_right .info {
+    -webkit-transform: translateZ(-1000px) rotateY(-90deg);
+    -moz-transform: translateZ(-1000px) rotateY(-90deg);
+    -ms-transform: translateZ(-1000px) rotateY(-90deg);
+    -o-transform: translateZ(-1000px) rotateY(-90deg);
+    transform: translateZ(-1000px) rotateY(-90deg);
+}
+
+.ih-item.circle.effect11.left_to_right a:hover .img {
+    -webkit-transform: translateZ(-1000px) rotateY(90deg);
+    -moz-transform: translateZ(-1000px) rotateY(90deg);
+    -ms-transform: translateZ(-1000px) rotateY(90deg);
+    -o-transform: translateZ(-1000px) rotateY(90deg);
+    transform: translateZ(-1000px) rotateY(90deg);
+}
+
+.ih-item.circle.effect11.left_to_right a:hover .info {
+    -webkit-transform: translateZ(0) rotateY(0);
+    -moz-transform: translateZ(0) rotateY(0);
+    -ms-transform: translateZ(0) rotateY(0);
+    -o-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0);
+}
+
+.ih-item.circle.effect11.right_to_left .img {
+    -webkit-transform: translateZ(0) rotateY(0);
+    -moz-transform: translateZ(0) rotateY(0);
+    -ms-transform: translateZ(0) rotateY(0);
+    -o-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0);
+}
+
+.ih-item.circle.effect11.right_to_left .info {
+    -webkit-transform: translateZ(-1000px) rotateY(90deg);
+    -moz-transform: translateZ(-1000px) rotateY(90deg);
+    -ms-transform: translateZ(-1000px) rotateY(90deg);
+    -o-transform: translateZ(-1000px) rotateY(90deg);
+    transform: translateZ(-1000px) rotateY(90deg);
+}
+
+.ih-item.circle.effect11.right_to_left a:hover .img {
+    -webkit-transform: translateZ(-1000px) rotateY(-90deg);
+    -moz-transform: translateZ(-1000px) rotateY(-90deg);
+    -ms-transform: translateZ(-1000px) rotateY(-90deg);
+    -o-transform: translateZ(-1000px) rotateY(-90deg);
+    transform: translateZ(-1000px) rotateY(-90deg);
+}
+
+.ih-item.circle.effect11.right_to_left a:hover .info {
+    -webkit-transform: translateZ(0) rotateY(0);
+    -moz-transform: translateZ(0) rotateY(0);
+    -ms-transform: translateZ(0) rotateY(0);
+    -o-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0);
+}
+
+.ih-item.circle.effect11.top_to_bottom .img {
+    -webkit-transform: translateZ(0) rotateX(0);
+    -moz-transform: translateZ(0) rotateX(0);
+    -ms-transform: translateZ(0) rotateX(0);
+    -o-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0);
+}
+
+.ih-item.circle.effect11.top_to_bottom .info {
+    -webkit-transform: translateZ(-1000px) rotateX(90deg);
+    -moz-transform: translateZ(-1000px) rotateX(90deg);
+    -ms-transform: translateZ(-1000px) rotateX(90deg);
+    -o-transform: translateZ(-1000px) rotateX(90deg);
+    transform: translateZ(-1000px) rotateX(90deg);
+}
+
+.ih-item.circle.effect11.top_to_bottom a:hover .img {
+    -webkit-transform: translateZ(-1000px) rotateX(-90deg);
+    -moz-transform: translateZ(-1000px) rotateX(-90deg);
+    -ms-transform: translateZ(-1000px) rotateX(-90deg);
+    -o-transform: translateZ(-1000px) rotateX(-90deg);
+    transform: translateZ(-1000px) rotateX(-90deg);
+}
+
+.ih-item.circle.effect11.top_to_bottom a:hover .info {
+    -webkit-transform: translateZ(0) rotateX(0);
+    -moz-transform: translateZ(0) rotateX(0);
+    -ms-transform: translateZ(0) rotateX(0);
+    -o-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0);
+}
+
+.ih-item.circle.effect11.bottom_to_top .img {
+    -webkit-transform: translateZ(0) rotateX(0);
+    -moz-transform: translateZ(0) rotateX(0);
+    -ms-transform: translateZ(0) rotateX(0);
+    -o-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0);
+}
+
+.ih-item.circle.effect11.bottom_to_top .info {
+    -webkit-transform: translateZ(-1000px) rotateX(-90deg);
+    -moz-transform: translateZ(-1000px) rotateX(-90deg);
+    -ms-transform: translateZ(-1000px) rotateX(-90deg);
+    -o-transform: translateZ(-1000px) rotateX(-90deg);
+    transform: translateZ(-1000px) rotateX(-90deg);
+}
+
+.ih-item.circle.effect11.bottom_to_top a:hover .img {
+    -webkit-transform: translateZ(-1000px) rotateX(90deg);
+    -moz-transform: translateZ(-1000px) rotateX(90deg);
+    -ms-transform: translateZ(-1000px) rotateX(90deg);
+    -o-transform: translateZ(-1000px) rotateX(90deg);
+    transform: translateZ(-1000px) rotateX(90deg);
+}
+
+.ih-item.circle.effect11.bottom_to_top a:hover .info {
+    -webkit-transform: translateZ(0) rotateX(0);
+    -moz-transform: translateZ(0) rotateX(0);
+    -ms-transform: translateZ(0) rotateX(0);
+    -o-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0);
+}
+
+.ih-item.circle.effect12 .img {
+    opacity: 1;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect12.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect12 .info {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect12 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect12 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect12 a:hover .img {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ih-item.circle.effect12 a:hover .info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ih-item.circle.effect12.left_to_right .img {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+}
+
+.ih-item.circle.effect12.left_to_right .info {
+    -webkit-transform: translateX(100%) rotate(180deg);
+    -moz-transform: translateX(100%) rotate(180deg);
+    -ms-transform: translateX(100%) rotate(180deg);
+    -o-transform: translateX(100%) rotate(180deg);
+    transform: translateX(100%) rotate(180deg);
+}
+
+.ih-item.circle.effect12.left_to_right a:hover .img {
+    -webkit-transform: translateX(100%) rotate(180deg);
+    -moz-transform: translateX(100%) rotate(180deg);
+    -ms-transform: translateX(100%) rotate(180deg);
+    -o-transform: translateX(100%) rotate(180deg);
+    transform: translateX(100%) rotate(180deg);
+}
+
+.ih-item.circle.effect12.left_to_right a:hover .info {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.ih-item.circle.effect12.right_to_left .img {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+}
+
+.ih-item.circle.effect12.right_to_left .info {
+    -webkit-transform: translateX(-100%) rotate(-180deg);
+    -moz-transform: translateX(-100%) rotate(-180deg);
+    -ms-transform: translateX(-100%) rotate(-180deg);
+    -o-transform: translateX(-100%) rotate(-180deg);
+    transform: translateX(-100%) rotate(-180deg);
+}
+
+.ih-item.circle.effect12.right_to_left a:hover .img {
+    -webkit-transform: translateX(-100%) rotate(-180deg);
+    -moz-transform: translateX(-100%) rotate(-180deg);
+    -ms-transform: translateX(-100%) rotate(-180deg);
+    -o-transform: translateX(-100%) rotate(-180deg);
+    transform: translateX(-100%) rotate(-180deg);
+}
+
+.ih-item.circle.effect12.right_to_left a:hover .info {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.ih-item.circle.effect12.top_to_bottom .img {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+}
+
+.ih-item.circle.effect12.top_to_bottom .info {
+    -webkit-transform: translateY(-100%) rotate(-180deg);
+    -moz-transform: translateY(-100%) rotate(-180deg);
+    -ms-transform: translateY(-100%) rotate(-180deg);
+    -o-transform: translateY(-100%) rotate(-180deg);
+    transform: translateY(-100%) rotate(-180deg);
+}
+
+.ih-item.circle.effect12.top_to_bottom a:hover .img {
+    -webkit-transform: translateY(-100%) rotate(-180deg);
+    -moz-transform: translateY(-100%) rotate(-180deg);
+    -ms-transform: translateY(-100%) rotate(-180deg);
+    -o-transform: translateY(-100%) rotate(-180deg);
+    transform: translateY(-100%) rotate(-180deg);
+}
+
+.ih-item.circle.effect12.top_to_bottom a:hover .info {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.ih-item.circle.effect12.bottom_to_top .img {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+}
+
+.ih-item.circle.effect12.bottom_to_top .info {
+    -webkit-transform: translateY(100%) rotate(180deg);
+    -moz-transform: translateY(100%) rotate(180deg);
+    -ms-transform: translateY(100%) rotate(180deg);
+    -o-transform: translateY(100%) rotate(180deg);
+    transform: translateY(100%) rotate(180deg);
+}
+
+.ih-item.circle.effect12.bottom_to_top a:hover .img {
+    -webkit-transform: translateY(100%) rotate(180deg);
+    -moz-transform: translateY(100%) rotate(180deg);
+    -ms-transform: translateY(100%) rotate(180deg);
+    -o-transform: translateY(100%) rotate(180deg);
+    transform: translateY(100%) rotate(180deg);
+}
+
+.ih-item.circle.effect12.bottom_to_top a:hover .info {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.ih-item.circle.effect13.colored .info {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+}
+
+.ih-item.circle.effect13 .info {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect13 .info h3 {
+    visibility: hidden;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect13 .info p {
+    visibility: hidden;
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect13 a:hover .info {
+    opacity: 1;
+}
+
+.ih-item.circle.effect13 a:hover h3 {
+    visibility: visible;
+}
+
+.ih-item.circle.effect13 a:hover p {
+    visibility: visible;
+}
+
+.ih-item.circle.effect13.from_left_and_right .info h3 {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.circle.effect13.from_left_and_right .info p {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.circle.effect13.from_left_and_right a:hover h3 {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect13.from_left_and_right a:hover p {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.circle.effect13.top_to_bottom .info h3 {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.circle.effect13.top_to_bottom .info p {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.circle.effect13.top_to_bottom a:hover h3 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect13.top_to_bottom a:hover p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect13.bottom_to_top .info h3 {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.circle.effect13.bottom_to_top .info p {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.circle.effect13.bottom_to_top a:hover h3 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect13.bottom_to_top a:hover p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.circle.effect14 {
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    perspective: 900px;
+}
+
+.ih-item.circle.effect14 .img {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.ih-item.circle.effect14.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect14 .info {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.35s ease-in-out 0.3s;
+    -moz-transition: all 0.35s ease-in-out 0.3s;
+    transition: all 0.35s ease-in-out 0.3s;
+}
+
+.ih-item.circle.effect14 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect14 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect14 a:hover .img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ih-item.circle.effect14 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.circle.effect14.left_to_right .img {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.ih-item.circle.effect14.left_to_right .info {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.ih-item.circle.effect14.left_to_right a:hover .img {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+}
+
+.ih-item.circle.effect14.left_to_right a:hover .info {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.ih-item.circle.effect14.right_to_left .img {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.ih-item.circle.effect14.right_to_left .info {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.ih-item.circle.effect14.right_to_left a:hover .img {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+}
+
+.ih-item.circle.effect14.right_to_left a:hover .info {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.ih-item.circle.effect14.top_to_bottom .img {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.ih-item.circle.effect14.top_to_bottom .info {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.ih-item.circle.effect14.top_to_bottom a:hover .img {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+}
+
+.ih-item.circle.effect14.top_to_bottom a:hover .info {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+.ih-item.circle.effect14.bottom_to_top .img {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.ih-item.circle.effect14.bottom_to_top .info {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.ih-item.circle.effect14.bottom_to_top a:hover .img {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.ih-item.circle.effect14.bottom_to_top a:hover .info {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+.ih-item.circle.effect15 .img {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    -o-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect15.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect15 .info {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.5) rotate(-720deg);
+    -moz-transform: scale(0.5) rotate(-720deg);
+    -ms-transform: scale(0.5) rotate(-720deg);
+    -o-transform: scale(0.5) rotate(-720deg);
+    transform: scale(0.5) rotate(-720deg);
+    -webkit-transition: all 0.35s ease-in-out 0.3s;
+    -moz-transition: all 0.35s ease-in-out 0.3s;
+    transition: all 0.35s ease-in-out 0.3s;
+}
+
+.ih-item.circle.effect15 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect15 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect15 a:hover .img {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.5) rotate(720deg);
+    -moz-transform: scale(0.5) rotate(720deg);
+    -ms-transform: scale(0.5) rotate(720deg);
+    -o-transform: scale(0.5) rotate(720deg);
+    transform: scale(0.5) rotate(720deg);
+}
+
+.ih-item.circle.effect15 a:hover .info {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    -o-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+}
+
+.ih-item.circle.effect16 .img {
+    z-index: 11;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect16.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect16 .info {
+    background: #333333;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect16 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect16 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect16.left_to_right .img {
+    -webkit-transform-origin: 95% 40%;
+    -moz-transform-origin: 95% 40%;
+    -ms-transform-origin: 95% 40%;
+    -o-transform-origin: 95% 40%;
+    transform-origin: 95% 40%;
+}
+
+.ih-item.circle.effect16.left_to_right .img:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    top: 40%;
+    left: 95%;
+    margin: -4px 0 0 -4px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.ih-item.circle.effect16.left_to_right a:hover .img {
+    -webkit-transform: rotate(-120deg);
+    -moz-transform: rotate(-120deg);
+    -ms-transform: rotate(-120deg);
+    -o-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+}
+
+.ih-item.circle.effect16.right_to_left .img {
+    -webkit-transform-origin: 5% 40%;
+    -moz-transform-origin: 5% 40%;
+    -ms-transform-origin: 5% 40%;
+    -o-transform-origin: 5% 40%;
+    transform-origin: 5% 40%;
+}
+
+.ih-item.circle.effect16.right_to_left .img:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    top: 40%;
+    left: 5%;
+    margin: -4px 0 0 -4px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.ih-item.circle.effect16.right_to_left a:hover .img {
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+
+.ih-item.circle.effect17 .info {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect17 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect17 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect17 a:hover .img:before {
+    box-shadow: inset 0 0 0 110px #333333, inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 0 110px rgba(0, 0, 0, 0.6), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ih-item.circle.effect17 a:hover .info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.circle.effect17 a:hover .info p {
+    opacity: 1;
+}
+
+.ih-item.circle.effect17.colored a:hover .img:before {
+    box-shadow: inset 0 0 0 110px #1a4a72, inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 0 110px rgba(26, 74, 114, 0.6), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ih-item.circle.effect18 {
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    perspective: 900px;
+}
+
+.ih-item.circle.effect18 .img {
+    z-index: 11;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.ih-item.circle.effect18.colored .info .info-back {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect18 .info {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.ih-item.circle.effect18 .info .info-back {
+    opacity: 1;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+}
+
+.ih-item.circle.effect18 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect18 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect18.bottom_to_top .img {
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.ih-item.circle.effect18.bottom_to_top a:hover .img {
+    -webkit-transform: rotate3d(1, 0, 0, 180deg);
+    -moz-transform: rotate3d(1, 0, 0, 180deg);
+    -ms-transform: rotate3d(1, 0, 0, 180deg);
+    -o-transform: rotate3d(1, 0, 0, 180deg);
+    transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.ih-item.circle.effect18.top_to_bottom .img {
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.ih-item.circle.effect18.top_to_bottom a:hover .img {
+    -webkit-transform: rotate3d(1, 0, 0, -180deg);
+    -moz-transform: rotate3d(1, 0, 0, -180deg);
+    -ms-transform: rotate3d(1, 0, 0, -180deg);
+    -o-transform: rotate3d(1, 0, 0, -180deg);
+    transform: rotate3d(1, 0, 0, -180deg);
+}
+
+.ih-item.circle.effect18.left_to_right .img {
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.ih-item.circle.effect18.left_to_right a:hover .img {
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    -moz-transform: rotate3d(0, 1, 0, 180deg);
+    -ms-transform: rotate3d(0, 1, 0, 180deg);
+    -o-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.ih-item.circle.effect18.right_to_left .img {
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.ih-item.circle.effect18.right_to_left a:hover .img {
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    -moz-transform: rotate3d(0, 1, 0, -180deg);
+    -ms-transform: rotate3d(0, 1, 0, -180deg);
+    -o-transform: rotate3d(0, 1, 0, -180deg);
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+
+.ih-item.circle.effect19.colored .info {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+}
+
+.ih-item.circle.effect19 .info {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect19 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 45px 0 0 0;
+    height: 140px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect19 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect19 a:hover .info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.circle.effect20 {
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    perspective: 900px;
+}
+
+.ih-item.circle.effect20 .img {
+    -webkit-transition: all 0.35s linear;
+    -moz-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.ih-item.circle.effect20.colored .info .info-back {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect20 .info {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.ih-item.circle.effect20 .info .info-back {
+    opacity: 1;
+    visibility: hidden;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    -webkit-transition: all 0.35s linear;
+    -moz-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ih-item.circle.effect20 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect20 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect20 a:hover .img {
+    opacity: 0;
+}
+
+.ih-item.circle.effect20 a:hover .info .info-back {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ih-item.circle.effect20.top_to_bottom .info .info-back {
+    -webkit-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    -moz-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    -ms-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    -o-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+}
+
+.ih-item.circle.effect20.top_to_bottom a:hover .img {
+    -webkit-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    -moz-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    -ms-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    -o-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+}
+
+.ih-item.circle.effect20.top_to_bottom a:hover .info .info-back {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+    -moz-transform: rotate3d(1, 0, 0, 0deg);
+    -ms-transform: rotate3d(1, 0, 0, 0deg);
+    -o-transform: rotate3d(1, 0, 0, 0deg);
+    transform: rotate3d(1, 0, 0, 0deg);
+}
+
+.ih-item.circle.effect20.bottom_to_top .info .info-back {
+    -webkit-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    -moz-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    -ms-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    -o-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+}
+
+.ih-item.circle.effect20.bottom_to_top a:hover .img {
+    -webkit-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    -moz-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    -ms-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    -o-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+}
+
+.ih-item.circle.effect20.bottom_to_top a:hover .info .info-back {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+    -moz-transform: rotate3d(1, 0, 0, 0deg);
+    -ms-transform: rotate3d(1, 0, 0, 0deg);
+    -o-transform: rotate3d(1, 0, 0, 0deg);
+    transform: rotate3d(1, 0, 0, 0deg);
+}
+
+.ih-item.square.effect1 {
+    overflow: hidden;
+}
+
+.ih-item.square.effect1.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.square.effect1 .img {
+    z-index: 11;
+    position: absolute;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect1 .info {
+    background: #333333;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect1 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect1.left_and_right .info h3 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    margin: 0;
+}
+
+.ih-item.square.effect1.left_and_right .info p {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    margin: 0;
+    font-style: italic;
+    font-size: 12px;
+    color: #bbb;
+}
+
+.ih-item.square.effect1.left_and_right a:hover .img {
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+.ih-item.square.effect1.top_to_bottom .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 10px 0 4px;
+    margin: 10px 0 0 0;
+}
+
+.ih-item.square.effect1.top_to_bottom .info p {
+    font-style: italic;
+    font-size: 12px;
+    color: #bbb;
+    padding: 5px;
+    text-align: center;
+}
+
+.ih-item.square.effect1.top_to_bottom a:hover .img {
+    -webkit-transform: translateY(30px) scale(0.6);
+    -moz-transform: translateY(30px) scale(0.6);
+    -ms-transform: translateY(30px) scale(0.6);
+    -o-transform: translateY(30px) scale(0.6);
+    transform: translateY(30px) scale(0.6);
+}
+
+.ih-item.square.effect1.bottom_to_top .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 10px 0 4px;
+    margin: 134px 0 0 0;
+}
+
+.ih-item.square.effect1.bottom_to_top .info p {
+    font-style: italic;
+    font-size: 12px;
+    color: #bbb;
+    padding: 5px;
+    text-align: center;
+}
+
+.ih-item.square.effect1.bottom_to_top a:hover .img {
+    -webkit-transform: translateY(-30px) scale(0.6);
+    -moz-transform: translateY(-30px) scale(0.6);
+    -ms-transform: translateY(-30px) scale(0.6);
+    -o-transform: translateY(-30px) scale(0.6);
+    transform: translateY(-30px) scale(0.6);
+}
+
+.ih-item.square.effect2 {
+    overflow: hidden;
+}
+
+.ih-item.square.effect2.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.square.effect2.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect2 .img {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: rotate(0deg) scale(1);
+    -moz-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    -o-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+}
+
+.ih-item.square.effect2 .info {
+    background: #333333;
+    visibility: hidden;
+    -webkit-transition: all 0.35s 0.3s ease-in-out;
+    -moz-transition: all 0.35s 0.3s ease-in-out;
+    transition: all 0.35s 0.3s ease-in-out;
+}
+
+.ih-item.square.effect2 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+    -webkit-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
+    transform: translateY(-200px);
+    -webkit-transition: all 0.35s 0.6s ease-in-out;
+    -moz-transition: all 0.35s 0.6s ease-in-out;
+    transition: all 0.35s 0.6s ease-in-out;
+}
+
+.ih-item.square.effect2 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+    -webkit-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
+    transform: translateY(-200px);
+    -webkit-transition: all 0.35s 0.5s linear;
+    -moz-transition: all 0.35s 0.5s linear;
+    transition: all 0.35s 0.5s linear;
+}
+
+.ih-item.square.effect2 a:hover .img {
+    -webkit-transform: rotate(720deg) scale(0);
+    -moz-transform: rotate(720deg) scale(0);
+    -ms-transform: rotate(720deg) scale(0);
+    -o-transform: rotate(720deg) scale(0);
+    transform: rotate(720deg) scale(0);
+    opacity: 0;
+}
+
+.ih-item.square.effect2 a:hover .info {
+    visibility: visible;
+}
+
+.ih-item.square.effect2 a:hover .info h3,
+.ih-item.square.effect2 a:hover .info p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect3 {
+    overflow: hidden;
+}
+
+.ih-item.square.effect3.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.square.effect3 .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect3 .info {
+    height: 65px;
+    background: #333333;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect3 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 10px 0 4px;
+    margin: 4px 0 0 0;
+}
+
+.ih-item.square.effect3 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 5px;
+    text-align: center;
+}
+
+.ih-item.square.effect3 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.square.effect3.bottom_to_top .info {
+    top: auto;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.square.effect3.bottom_to_top a:hover .img {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.ih-item.square.effect3.bottom_to_top a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect3.top_to_bottom .info {
+    bottom: auto;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.square.effect3.top_to_bottom a:hover .img {
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transform: translateY(50px);
+}
+
+.ih-item.square.effect3.top_to_bottom a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect4 {
+    overflow: hidden;
+    position: relative;
+}
+
+.ih-item.square.effect4.colored .info {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect4.colored .mask1,
+.ih-item.square.effect4.colored .mask2 {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+}
+
+.ih-item.square.effect4 .img {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect4 .mask1,
+.ih-item.square.effect4 .mask2 {
+    position: absolute;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    height: 361px;
+    width: 361px;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect4 .mask1 {
+    left: auto;
+    right: 0;
+    top: 0;
+    -webkit-transform: rotate(56.5deg) translateX(-180px);
+    -moz-transform: rotate(56.5deg) translateX(-180px);
+    -ms-transform: rotate(56.5deg) translateX(-180px);
+    -o-transform: rotate(56.5deg) translateX(-180px);
+    transform: rotate(56.5deg) translateX(-180px);
+    -webkit-transform-origin: 100% 0%;
+    -moz-transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -o-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+}
+
+.ih-item.square.effect4 .mask2 {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: rotate(56.5deg) translateX(180px);
+    -moz-transform: rotate(56.5deg) translateX(180px);
+    -ms-transform: rotate(56.5deg) translateX(180px);
+    -o-transform: rotate(56.5deg) translateX(180px);
+    transform: rotate(56.5deg) translateX(180px);
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+
+.ih-item.square.effect4 .info {
+    background: #111111;
+    height: 0;
+    visibility: hidden;
+    width: 361px;
+    -webkit-transform: rotate(-33.5deg) translate(-112px, 166px);
+    -moz-transform: rotate(-33.5deg) translate(-112px, 166px);
+    -ms-transform: rotate(-33.5deg) translate(-112px, 166px);
+    -o-transform: rotate(-33.5deg) translate(-112px, 166px);
+    transform: rotate(-33.5deg) translate(-112px, 166px);
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transition: all 0.35s ease-in-out 0.35s;
+    -moz-transition: all 0.35s ease-in-out 0.35s;
+    transition: all 0.35s ease-in-out 0.35s;
+}
+
+.ih-item.square.effect4 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: transparent;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out 0.35s;
+    -moz-transition: all 0.35s ease-in-out 0.35s;
+    transition: all 0.35s ease-in-out 0.35s;
+}
+
+.ih-item.square.effect4 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out 0.35s;
+    -moz-transition: all 0.35s ease-in-out 0.35s;
+    transition: all 0.35s ease-in-out 0.35s;
+}
+
+.ih-item.square.effect4 a:hover .mask1 {
+    -webkit-transform: rotate(56.5deg) translateX(1px);
+    -moz-transform: rotate(56.5deg) translateX(1px);
+    -ms-transform: rotate(56.5deg) translateX(1px);
+    -o-transform: rotate(56.5deg) translateX(1px);
+    transform: rotate(56.5deg) translateX(1px);
+}
+
+.ih-item.square.effect4 a:hover .mask2 {
+    -webkit-transform: rotate(56.5deg) translateX(-1px);
+    -moz-transform: rotate(56.5deg) translateX(-1px);
+    -ms-transform: rotate(56.5deg) translateX(-1px);
+    -o-transform: rotate(56.5deg) translateX(-1px);
+    transform: rotate(56.5deg) translateX(-1px);
+}
+
+.ih-item.square.effect4 a:hover .info {
+    width: 300px;
+    height: 120px;
+    visibility: visible;
+    top: 40px;
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    -moz-transform: rotate(0deg) translate(0, 0);
+    -ms-transform: rotate(0deg) translate(0, 0);
+    -o-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0);
+}
+
+.ih-item.square.effect4 a:hover .info h3,
+.ih-item.square.effect4 a:hover .info p {
+    opacity: 1;
+}
+
+.ih-item.square.effect5.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.square.effect5.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect5 .img {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect5 .info {
+    background: #333333;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect5 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+}
+
+.ih-item.square.effect5 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+}
+
+.ih-item.square.effect5 a:hover .img {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    transition-delay: 0;
+}
+
+.ih-item.square.effect5 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg);
+    -moz-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    -o-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.ih-item.square.effect5.left_to_right .info {
+    -webkit-transform: scale(0) rotate(-180deg);
+    -moz-transform: scale(0) rotate(-180deg);
+    -ms-transform: scale(0) rotate(-180deg);
+    -o-transform: scale(0) rotate(-180deg);
+    transform: scale(0) rotate(-180deg);
+}
+
+.ih-item.square.effect5.right_to_left .info {
+    -webkit-transform: scale(0) rotate(180deg);
+    -moz-transform: scale(0) rotate(180deg);
+    -ms-transform: scale(0) rotate(180deg);
+    -o-transform: scale(0) rotate(180deg);
+    transform: scale(0) rotate(180deg);
+}
+
+.ih-item.square.effect6 {
+    overflow: hidden;
+}
+
+.ih-item.square.effect6.colored .info {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+}
+
+.ih-item.square.effect6.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect6 .img {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect6 .info {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect6 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect6 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+    -webkit-transition: all 0.35s 0.1s linear;
+    -moz-transition: all 0.35s 0.1s linear;
+    transition: all 0.35s 0.1s linear;
+}
+
+.ih-item.square.effect6 a:hover .img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.ih-item.square.effect6 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.square.effect6.from_top_and_bottom .info h3 {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.square.effect6.from_top_and_bottom .info p {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.square.effect6.from_top_and_bottom a:hover .info h3,
+.ih-item.square.effect6.from_top_and_bottom a:hover .info p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect6.from_left_and_right .info h3 {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.square.effect6.from_left_and_right .info p {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.square.effect6.from_left_and_right a:hover .info h3,
+.ih-item.square.effect6.from_left_and_right a:hover .info p {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.square.effect6.top_to_bottom .info h3 {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.square.effect6.top_to_bottom .info p {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.square.effect6.top_to_bottom a:hover .info h3,
+.ih-item.square.effect6.top_to_bottom a:hover .info p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect6.bottom_to_top .info h3 {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.square.effect6.bottom_to_top .info p {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.square.effect6.bottom_to_top a:hover .info h3,
+.ih-item.square.effect6.bottom_to_top a:hover .info p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect7 {
+    overflow: hidden;
+}
+
+.ih-item.square.effect7.colored .info {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+}
+
+.ih-item.square.effect7.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect7 .img {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect7 .info {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect7 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+    -webkit-transform: scale(4);
+    -moz-transform: scale(4);
+    -ms-transform: scale(4);
+    -o-transform: scale(4);
+    transform: scale(4);
+    -webkit-transition: all 0.35s 0.1s ease-in-out;
+    -moz-transition: all 0.35s 0.1s ease-in-out;
+    transition: all 0.35s 0.1s ease-in-out;
+}
+
+.ih-item.square.effect7 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+    -webkit-transform: scale(5);
+    -moz-transform: scale(5);
+    -ms-transform: scale(5);
+    -o-transform: scale(5);
+    transform: scale(5);
+    -webkit-transition: all 0.35s 0.3s linear;
+    -moz-transition: all 0.35s 0.3s linear;
+    transition: all 0.35s 0.3s linear;
+}
+
+.ih-item.square.effect7 a:hover .img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.ih-item.square.effect7 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.square.effect7 a:hover .info h3,
+.ih-item.square.effect7 a:hover .info p {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect8 {
+    overflow: hidden;
+}
+
+.ih-item.square.effect8.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.square.effect8.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect8 .img {
+    opacity: 1;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect8 .info {
+    background: #333333;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect8 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+    -webkit-transition: all 0.35s 0.1s ease-in-out;
+    -moz-transition: all 0.35s 0.1s ease-in-out;
+    transition: all 0.35s 0.1s ease-in-out;
+}
+
+.ih-item.square.effect8 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+    -webkit-transition: all 0.35s 0.15s linear;
+    -moz-transition: all 0.35s 0.15s linear;
+    transition: all 0.35s 0.15s linear;
+}
+
+.ih-item.square.effect8 a:hover .img {
+    opacity: 0;
+}
+
+.ih-item.square.effect8 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.square.effect8.scale_up .img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect8.scale_up .info {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.ih-item.square.effect8.scale_up .info h3,
+.ih-item.square.effect8.scale_up .info p {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.ih-item.square.effect8.scale_up a:hover .img {
+    -webkit-transform: scale(5);
+    -moz-transform: scale(5);
+    -ms-transform: scale(5);
+    -o-transform: scale(5);
+    transform: scale(5);
+}
+
+.ih-item.square.effect8.scale_up a:hover .info {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect8.scale_up a:hover .info h3,
+.ih-item.square.effect8.scale_up a:hover .info p {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect8.scale_down .img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect8.scale_down .info {
+    -webkit-transform: scale(5);
+    -moz-transform: scale(5);
+    -ms-transform: scale(5);
+    -o-transform: scale(5);
+    transform: scale(5);
+}
+
+.ih-item.square.effect8.scale_down .info h3,
+.ih-item.square.effect8.scale_down .info p {
+    -webkit-transform: scale(5);
+    -moz-transform: scale(5);
+    -ms-transform: scale(5);
+    -o-transform: scale(5);
+    transform: scale(5);
+}
+
+.ih-item.square.effect8.scale_down a:hover .img {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.square.effect8.scale_down a:hover .info {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect8.scale_down a:hover .info h3,
+.ih-item.square.effect8.scale_down a:hover .info p {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect9 {
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    perspective: 900px;
+}
+
+.ih-item.square.effect9.colored .info .info-back {
+    background: #1a4a72;
+}
+
+.ih-item.square.effect9.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect9 .img {
+    position: relative;
+    z-index: 11;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.ih-item.square.effect9 .info {
+    z-index: 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.ih-item.square.effect9 .info .info-back {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    background: #333333;
+}
+
+.ih-item.square.effect9 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 0;
+}
+
+.ih-item.square.effect9 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+}
+
+.ih-item.square.effect9.left_to_right .img {
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.ih-item.square.effect9.left_to_right a:hover .img {
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    -moz-transform: rotate3d(0, 1, 0, 180deg);
+    -ms-transform: rotate3d(0, 1, 0, 180deg);
+    -o-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.ih-item.square.effect9.right_to_left .img {
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.ih-item.square.effect9.right_to_left a:hover .img {
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    -moz-transform: rotate3d(0, 1, 0, -180deg);
+    -ms-transform: rotate3d(0, 1, 0, -180deg);
+    -o-transform: rotate3d(0, 1, 0, -180deg);
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+
+.ih-item.square.effect9.top_to_bottom .img {
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.ih-item.square.effect9.top_to_bottom a:hover .img {
+    -webkit-transform: rotate3d(1, 0, 0, -180deg);
+    -moz-transform: rotate3d(1, 0, 0, -180deg);
+    -ms-transform: rotate3d(1, 0, 0, -180deg);
+    -o-transform: rotate3d(1, 0, 0, -180deg);
+    transform: rotate3d(1, 0, 0, -180deg);
+}
+
+.ih-item.square.effect9.bottom_to_top .img {
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.ih-item.square.effect9.bottom_to_top a:hover .img {
+    -webkit-transform: rotate3d(1, 0, 0, 180deg);
+    -moz-transform: rotate3d(1, 0, 0, 180deg);
+    -ms-transform: rotate3d(1, 0, 0, 180deg);
+    -o-transform: rotate3d(1, 0, 0, 180deg);
+    transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.ih-item.square.effect10 {
+    overflow: hidden;
+}
+
+.ih-item.square.effect10.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.square.effect10.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect10 .img {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect10 .info {
+    background: #333333;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect10 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+}
+
+.ih-item.square.effect10 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+}
+
+.ih-item.square.effect10 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.square.effect10.left_to_right .img {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.square.effect10.left_to_right .info {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.square.effect10.left_to_right a:hover .img {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.square.effect10.left_to_right a:hover .info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.square.effect10.right_to_left .img {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.square.effect10.right_to_left .info {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.square.effect10.right_to_left a:hover .img {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.square.effect10.right_to_left a:hover .info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.square.effect10.top_to_bottom .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect10.top_to_bottom .info {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.square.effect10.top_to_bottom a:hover .img {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.square.effect10.top_to_bottom a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect10.bottom_to_top .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect10.bottom_to_top .info {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.square.effect10.bottom_to_top a:hover .img {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.square.effect10.bottom_to_top a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect11 {
+    overflow: hidden;
+}
+
+.ih-item.square.effect11.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.square.effect11.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect11 .img {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect11 .info {
+    background: #333333;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease 0.2s;
+    -moz-transition: all 0.35s ease 0.2s;
+    transition: all 0.35s ease 0.2s;
+}
+
+.ih-item.square.effect11 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+}
+
+.ih-item.square.effect11 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+}
+
+.ih-item.square.effect11 a:hover .img {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.square.effect11 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.square.effect11.left_to_right .info {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.square.effect11.left_to_right a:hover .info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.square.effect11.right_to_left .info {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.square.effect11.right_to_left a:hover .info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.square.effect11.top_to_bottom .info {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.square.effect11.top_to_bottom a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect11.bottom_to_top .info {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.square.effect11.bottom_to_top a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect12 {
+    overflow: hidden;
+}
+
+.ih-item.square.effect12.colored .info {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+}
+
+.ih-item.square.effect12.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect12 .img {
+    -webkit-transition: all 0.35s ease-in;
+    -moz-transition: all 0.35s ease-in;
+    transition: all 0.35s ease-in;
+}
+
+.ih-item.square.effect12 .info {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in;
+    -moz-transition: all 0.35s ease-in;
+    transition: all 0.35s ease-in;
+}
+
+.ih-item.square.effect12 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+    -webkit-transition: all 0.35s ease-in;
+    -moz-transition: all 0.35s ease-in;
+    transition: all 0.35s ease-in;
+}
+
+.ih-item.square.effect12 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+    -webkit-transition: all 0.35s ease-in;
+    -moz-transition: all 0.35s ease-in;
+    transition: all 0.35s ease-in;
+}
+
+.ih-item.square.effect12 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.ih-item.square.effect12 a:hover .info h3 {
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.ih-item.square.effect12 a:hover .info p {
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+.ih-item.square.effect12.left_to_right .info {
+    -webkit-transform: translate(-460px, -100px) rotate(-180deg);
+    -moz-transform: translate(-460px, -100px) rotate(-180deg);
+    -ms-transform: translate(-460px, -100px) rotate(-180deg);
+    -o-transform: translate(-460px, -100px) rotate(-180deg);
+    transform: translate(-460px, -100px) rotate(-180deg);
+}
+
+.ih-item.square.effect12.left_to_right .info h3 {
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transform: translateY(-100px);
+}
+
+.ih-item.square.effect12.left_to_right .info p {
+    -webkit-transform: translateX(-300px) rotate(-90deg);
+    -moz-transform: translateX(-300px) rotate(-90deg);
+    -ms-transform: translateX(-300px) rotate(-90deg);
+    -o-transform: translateX(-300px) rotate(-90deg);
+    transform: translateX(-300px) rotate(-90deg);
+}
+
+.ih-item.square.effect12.left_to_right a:hover .info {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+.ih-item.square.effect12.left_to_right a:hover .info h3 {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.ih-item.square.effect12.left_to_right a:hover .info p {
+    -webkit-transform: translateX(0px) rotate(0deg);
+    -moz-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    -o-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+}
+
+.ih-item.square.effect12.right_to_left .info {
+    -webkit-transform: translate(460px, -100px) rotate(180deg);
+    -moz-transform: translate(460px, -100px) rotate(180deg);
+    -ms-transform: translate(460px, -100px) rotate(180deg);
+    -o-transform: translate(460px, -100px) rotate(180deg);
+    transform: translate(460px, -100px) rotate(180deg);
+}
+
+.ih-item.square.effect12.right_to_left .info h3 {
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transform: translateY(-100px);
+}
+
+.ih-item.square.effect12.right_to_left .info p {
+    -webkit-transform: translateX(300px) rotate(90deg);
+    -moz-transform: translateX(300px) rotate(90deg);
+    -ms-transform: translateX(300px) rotate(90deg);
+    -o-transform: translateX(300px) rotate(90deg);
+    transform: translateX(300px) rotate(90deg);
+}
+
+.ih-item.square.effect12.right_to_left a:hover .info {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+.ih-item.square.effect12.right_to_left a:hover .info h3 {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.ih-item.square.effect12.right_to_left a:hover .info p {
+    -webkit-transform: translateX(0px) rotate(0deg);
+    -moz-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    -o-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+}
+
+.ih-item.square.effect12.top_to_bottom .info {
+    -webkit-transform: translate(-265px, -145px) rotate(-45deg);
+    -moz-transform: translate(-265px, -145px) rotate(-45deg);
+    -ms-transform: translate(-265px, -145px) rotate(-45deg);
+    -o-transform: translate(-265px, -145px) rotate(-45deg);
+    transform: translate(-265px, -145px) rotate(-45deg);
+}
+
+.ih-item.square.effect12.top_to_bottom .info h3 {
+    -webkit-transform: translate(200px, -200px);
+    -moz-transform: translate(200px, -200px);
+    -ms-transform: translate(200px, -200px);
+    -o-transform: translate(200px, -200px);
+    transform: translate(200px, -200px);
+}
+
+.ih-item.square.effect12.top_to_bottom .info p {
+    -webkit-transform: translate(200px, -200px);
+    -moz-transform: translate(200px, -200px);
+    -ms-transform: translate(200px, -200px);
+    -o-transform: translate(200px, -200px);
+    transform: translate(200px, -200px);
+}
+
+.ih-item.square.effect12.top_to_bottom a:hover .info {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.ih-item.square.effect12.top_to_bottom a:hover .info h3 {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.ih-item.square.effect12.top_to_bottom a:hover .info p {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.ih-item.square.effect12.bottom_to_top .info {
+    -webkit-transform: translate(265px, 145px) rotate(45deg);
+    -moz-transform: translate(265px, 145px) rotate(45deg);
+    -ms-transform: translate(265px, 145px) rotate(45deg);
+    -o-transform: translate(265px, 145px) rotate(45deg);
+    transform: translate(265px, 145px) rotate(45deg);
+}
+
+.ih-item.square.effect12.bottom_to_top .info h3 {
+    -webkit-transform: translate(200px, -200px);
+    -moz-transform: translate(200px, -200px);
+    -ms-transform: translate(200px, -200px);
+    -o-transform: translate(200px, -200px);
+    transform: translate(200px, -200px);
+}
+
+.ih-item.square.effect12.bottom_to_top .info p {
+    -webkit-transform: translate(-200px, 200px);
+    -moz-transform: translate(-200px, 200px);
+    -ms-transform: translate(-200px, 200px);
+    -o-transform: translate(-200px, 200px);
+    transform: translate(-200px, 200px);
+}
+
+.ih-item.square.effect12.bottom_to_top a:hover .info {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.ih-item.square.effect12.bottom_to_top a:hover .info h3 {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.ih-item.square.effect12.bottom_to_top a:hover .info p {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.ih-item.square.effect13 {
+    overflow: hidden;
+}
+
+.ih-item.square.effect13.colored .info {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+}
+
+.ih-item.square.effect13.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect13 .img {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect13 .info {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect13 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+}
+
+.ih-item.square.effect13 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+}
+
+.ih-item.square.effect13 a:hover .img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.ih-item.square.effect13 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.square.effect13.left_to_right .info {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.ih-item.square.effect13.left_to_right a:hover .info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.square.effect13.right_to_left .info {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.ih-item.square.effect13.right_to_left a:hover .info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.ih-item.square.effect13.top_to_bottom .info {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.square.effect13.top_to_bottom a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect13.bottom_to_top .info {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.square.effect13.bottom_to_top a:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect14.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.square.effect14.colored .info h3 {
+    background: rgba(12, 34, 52, 0.6);
+}
+
+.ih-item.square.effect14 .img {
+    opacity: 1;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.square.effect14 .info {
+    background: #333333;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.35s ease 0.2s;
+    -moz-transition: all 0.35s ease 0.2s;
+    transition: all 0.35s ease 0.2s;
+}
+
+.ih-item.square.effect14 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+}
+
+.ih-item.square.effect14 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+}
+
+.ih-item.square.effect14 a:hover .img {
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.square.effect14 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.square.effect14.left_to_right .img {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+}
+
+.ih-item.square.effect14.left_to_right a:hover .img {
+    -webkit-transform: translateX(100%) rotate(180deg);
+    -moz-transform: translateX(100%) rotate(180deg);
+    -ms-transform: translateX(100%) rotate(180deg);
+    -o-transform: translateX(100%) rotate(180deg);
+    transform: translateX(100%) rotate(180deg);
+}
+
+.ih-item.square.effect14.right_to_left .img {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+}
+
+.ih-item.square.effect14.right_to_left a:hover .img {
+    -webkit-transform: translateX(-100%) rotate(-180deg);
+    -moz-transform: translateX(-100%) rotate(-180deg);
+    -ms-transform: translateX(-100%) rotate(-180deg);
+    -o-transform: translateX(-100%) rotate(-180deg);
+    transform: translateX(-100%) rotate(-180deg);
+}
+
+.ih-item.square.effect14.top_to_bottom .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect14.top_to_bottom a:hover .img {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.ih-item.square.effect14.bottom_to_top .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.ih-item.square.effect14.bottom_to_top a:hover .img {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.ih-item.square.effect15 {
+    overflow: hidden;
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    perspective: 900px;
+}
+
+.ih-item.square.effect15.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.square.effect15 .img {
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.ih-item.square.effect15 .info {
+    background: #333333;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out 0.3s;
+    -moz-transition: all 0.35s ease-in-out 0.3s;
+    transition: all 0.35s ease-in-out 0.3s;
+}
+
+.ih-item.square.effect15 .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    background: #111111;
+    margin: 30px 0 0 0;
+}
+
+.ih-item.square.effect15 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #bbb;
+    padding: 20px 20px 20px;
+    text-align: center;
+}
+
+.ih-item.square.effect15 a:hover .img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ih-item.square.effect15 a:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ih-item.square.effect15.left_to_right .img {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.ih-item.square.effect15.left_to_right .info {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.ih-item.square.effect15.left_to_right a:hover .img {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+}
+
+.ih-item.square.effect15.left_to_right a:hover .info {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.ih-item.square.effect15.right_to_left .img {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.ih-item.square.effect15.right_to_left .info {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.ih-item.square.effect15.right_to_left a:hover .img {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+}
+
+.ih-item.square.effect15.right_to_left a:hover .info {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.ih-item.square.effect15.top_to_bottom .img {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.ih-item.square.effect15.top_to_bottom .info {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.ih-item.square.effect15.top_to_bottom a:hover .img {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+}
+
+.ih-item.square.effect15.top_to_bottom a:hover .info {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+.ih-item.square.effect15.bottom_to_top .img {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.ih-item.square.effect15.bottom_to_top .info {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.ih-item.square.effect15.bottom_to_top a:hover .img {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.ih-item.square.effect15.bottom_to_top a:hover .info {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+
+.bs-docs-home, .bs-header {
+    color: #c8c8e6;
+}
+
+.highlight pre {
+    white-space: pre;
+}
+
+.section-heading {
+    padding-top: 80px;
+}
+
+.section-heading.first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bs-footer {
+    background-color: #2C2C44;
+    color: #575781;
+}
+
+.bs-footer a {
+    color: #575781;
+}
+
